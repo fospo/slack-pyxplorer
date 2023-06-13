@@ -1,4 +1,5 @@
 # Connect via Slack's API and explore the public channels owners
+# Pre-requisites: Python 3.6+, slack_sdk -> pip3 install slack_sdk
 # Usage: set SLACK_API_TOKEN env variable and run `python3 explore.py`
 # Slack OAuth Scopes needed: channels:read, users:read, channels:history, groups:read
 import os
