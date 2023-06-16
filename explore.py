@@ -42,6 +42,8 @@ def main():
         if creator_name:
             print(f"{channel['name']}, {creator_name}, {creator_real_name}")
 
+    exit(0)
+
 
 if __name__ == "__main__":
     main()
