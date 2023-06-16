@@ -22,7 +22,7 @@ def get_channel_creator(channel_id, web_client):
         print(f"Failed to retrieve creator info for channel: {channel_id}")
         return None
 
-    return creator_info["user"]["real_name"], creator_info["user"]["name"]
+    return creator_info["user"]["name"], creator_info["user"]["real_name"]
 
 
 def main():
