@@ -41,7 +41,6 @@ def main():
 
     while True:
         time.sleep(SLEEP_TIME)
-        print(f"Processing cursor: {cursor}")
         channel_list_response = web_client.conversations_list(types=CHANNEL_TYPES, limit=CHANNELS_PER_PAGE, cursor=cursor)
         if not channel_list_response.get("ok"):
             print(channel_list_response.get("error"))
